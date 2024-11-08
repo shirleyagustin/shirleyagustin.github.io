@@ -1,45 +1,115 @@
-/* Sidebar Styles */
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdebd0;
+    display: flex;
+    color: #000000;
+}
+
+/* Sidebar */
 .sidebar {
-  background-color: #097969;
-  width: 250px;
-  position: fixed;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
+    width: 250px;
+    background-color: #097969;
+    position: fixed;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
-/* Name Styles - Adjusted for Right Alignment */
 .name {
-  color: #90bfc5;
-  font-weight: 300;
-  margin-bottom: 40px;
-  align-self: flex-start; /* Align to the left of the sidebar */
-  margin-left: 40px; /* Shift to the right */
+    color: #90bfc5;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-/* Navigation Links */
-.sidebar-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .sidebar-link {
-  color: #fdebd0;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 18px;
+    text-decoration: none;
+    color: #fdebd0;
+    font-weight: 400;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s ease;
 }
 
 .sidebar-link.active {
-  font-weight: bold;
+    color: #90bfc5;
+}
+
+/* Main Content */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #097969;
+    margin-bottom: 20px;
+}
+
+.subsection h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #6e9296;
+    margin-bottom: 10px;
+}
+
+.subsection p, section p {
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Scroll Effect */
+.sidebar-link {
+    position: relative;
+}
+
+.sidebar-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #90bfc5;
+    transition: width 0.3s ease;
+}
+
+.sidebar-link:hover::before,
+.sidebar-link.active::before {
+    width: 100%;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
 }
