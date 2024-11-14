@@ -4,23 +4,75 @@ body {
   font-family: 'Source Sans 3', sans-serif;
   color: #432818;
   background-color: #edede9;
-  scroll-behavior: smooth;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
-/* Header Styles */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #d6ccc2;
+/* Main Container */
+.container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  width: 100%;
+}
+
+/* Profile Section */
+aside.profile {
+  width: 25%;
+  background-color: #d6ccc2;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile h2 {
+  font-size: 22px;
+  margin: 10px 0;
+  font-weight: 300;
+  color: #432818;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.social-media .icon {
+  font-size: 20px;
+  color: #432818;
+  text-decoration: none;
+}
+
+.social-media .icon:hover {
+  color: #6f4e37;
+}
+
+.bio {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Main Content Section */
+main {
+  width: 75%;
+  padding: 20px;
+}
+
+header {
+  background-color: #d6ccc2;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
 }
 
 .navbar nav {
@@ -40,53 +92,7 @@ header {
   border-bottom: 2px solid #432818;
 }
 
-/* Profile Section */
-aside.profile {
-  position: fixed;
-  top: 120px;
-  left: 20px;
-  width: 250px;
-  text-align: center;
-  background-color: #d6ccc2;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin: 10px 0;
-}
-
-.profile h2 {
-  font-size: 20px;
-  margin: 10px 0;
-  font-weight: 300;
-  color: #432818;
-}
-
-.social-media a {
-  display: block;
-  text-decoration: none;
-  font-size: 14px;
-  color: #432818;
-  margin: 5px 0;
-}
-
-.bio {
-  margin-top: 10px;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-/* Main Content Styles */
-main {
-  margin-left: 300px; /* To create space for the fixed profile section */
-  padding: 20px;
-}
-
+/* Section Styles */
 section {
   padding: 50px 20px;
 }
