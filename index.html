@@ -9,44 +9,55 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <div class="navbar">
-      <nav>
-        <a href="#about" id="about-link">ABOUT</a>
-        <a href="#projects" id="projects-link">PROJECTS</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
+  <div class="container">
+    <!-- Profile Section -->
     <aside class="profile">
       <img src="avatar.jpg" alt="Shirley's Avatar" class="avatar">
       <h2>SHIRLEY AGUSTIN</h2>
       <div class="social-media">
-        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/" target="_blank">GitHub</a>
-        <a href="mailto:youremail@example.com">Email</a>
+        <a href="https://www.linkedin.com/" target="_blank" class="icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/" target="_blank" class="icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:youremail@example.com" class="icon">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
       <p class="bio">Add your bio here.</p>
     </aside>
-    <section id="about">
-      <h1>ABOUT</h1>
-      <div class="subsection" id="cv">
-        <h2>CV</h2>
-        <p>This is where you can include details about your CV.</p>
-      </div>
-    </section>
-    <section id="projects">
-      <h1>PROJECTS</h1>
-      <p>Include information about your projects here.</p>
-    </section>
-  </main>
+
+    <!-- Main Content Section -->
+    <main>
+      <header>
+        <div class="navbar">
+          <nav>
+            <a href="#about" id="about-link">ABOUT</a>
+            <a href="#projects" id="projects-link">PROJECTS</a>
+          </nav>
+        </div>
+      </header>
+
+      <section id="about">
+        <h1>ABOUT</h1>
+        <div class="subsection" id="cv">
+          <h2>CV</h2>
+          <p>This is where you can include details about your CV.</p>
+        </div>
+      </section>
+      <section id="projects">
+        <h1>PROJECTS</h1>
+        <p>Include information about your projects here.</p>
+      </section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
 
 </html>
-
