@@ -1,97 +1,40 @@
 /* Header Styling */
 header {
-    position: fixed;
+    position: fixed; /* Keeps the header at the top */
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; /* Ensures the header spans the full width */
     background-color: #d6ccc2;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* Changes direction to row to align items side by side */
+    align-items: start; /* Aligns items at the start of the header */
     justify-content: space-between;
-    height: 100vh; /* Full viewport height */
-    z-index: 1000; /* Ensures it's above other content */
-    overflow-y: auto; /* Allows scrolling within the header if needed */
+    height: auto; /* Adjusted to auto to not cover the full viewport height */
+    z-index: 1000; /* Keeps it above other content */
+    padding: 20px; /* Adds padding to avoid content sticking to edges */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds shadow for better visibility */
 }
 
 .header-content {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px; /* Adds some padding inside the header */
-}
-
-nav {
-    position: relative;
-    width: 100%; /* Full width of the header */
-    text-align: center; /* Centers the navigation links */
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center; /* Centers the list items horizontally */
-    gap: 20px;
-    padding: 10px 0; /* Padding at top and bottom of the nav */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #432818;
-    font-weight: 300;
-    font-size: 1.2rem; /* Adjust size as needed */
-    padding: 5px 10px; /* Padding for clickable area */
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-    color: #d6ccc2;
-    background-color: #432818; /* Adds a background color on hover/active */
-    border-radius: 5px; /* Optional: rounds corners of the active/hover state */
+    flex-direction: row; /* Aligns children side by side */
+    align-items: center; /* Vertically centers items */
+    justify-content: flex-start; /* Aligns content to the left */
 }
 
 .avatar-section {
-    text-align: center;
-    margin-bottom: 20px; /* Adjust spacing as needed */
-}
-
-.avatar {
-    width: 100px; /* Adjust size as needed */
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #432818;
-}
-
-.avatar-section h1 {
-    font-size: 1.5rem; /* Adjust size as needed */
-    font-weight: 300;
-    color: #432818;
-    margin-top: 10px; /* Space between the avatar and the name */
-}
-
-.social-icons {
+    text-align: left; /* Aligns the text to the left */
+    flex: 1; /* Allows this section to grow */
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: flex-start; /* Aligns items to the start */
+    padding-right: 20px; /* Adds spacing between this section and the next */
 }
 
-.social-icons a {
-    color: #432818;
-    font-size: 1.5rem; /* Adjust icon size as needed */
-    transition: color 0.3s;
+nav {
+    flex: 2; /* Gives the navigation more space */
+    text-align: center; /* Keeps the navigation links centered */
 }
 
-.social-icons a:hover {
-    color: #d6ccc2;
-}
-
-.bio {
-    max-width: 200px;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    text-align: center;
-    margin-top: 15px;
-}
+/* Keep the rest of your CSS unchanged */
