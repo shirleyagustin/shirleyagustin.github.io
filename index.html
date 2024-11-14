@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shirley Agustin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Shirley Agustin</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="navbar">
+      <nav>
+        <a href="#about" id="about-link">ABOUT</a>
+        <a href="#projects" id="projects-link">PROJECTS</a>
+      </nav>
+      <div class="profile">
+        <img src="avatar.jpg" alt="Shirley's Avatar" class="avatar">
+        <h2>SHIRLEY AGUSTIN</h2>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="mailto:youremail@example.com">Email</a>
+        </div>
+        <p class="bio">Add your bio here.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
     <section id="about">
-        <h2>About Me</h2>
-        <p>[A short bio or introduction about yourself]</p>
+      <h1>ABOUT</h1>
+      <div class="subsection" id="cv">
+        <h2>CV</h2>
+        <p>This is where you can include details about your CV.</p>
+      </div>
     </section>
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of the first project.</p>
-        </div>
-        <!-- Repeat for other projects -->
+      <h1>PROJECTS</h1>
+      <p>Include information about your projects here.</p>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out via email at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
-    </section>
-    <footer>
-        <p></p>
-    </footer>
-    <script src="script.js"></script>
+  </main>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
 
